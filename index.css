@@ -13,9 +13,12 @@ body{
 }
 .input{
     width: 450px;
-    height: 60px;
+    height: 40px;
     border: solid black;
     margin: 10px;
+    text-align: right;
+    font-size: xx-large;
+    padding: 4px;
 }
 .operation{
     display: flex;
@@ -35,11 +38,34 @@ body{
     font: bolder;
     font-size: x-large;
 }
+
+.operation div:hover{
+    text-align: center;
+    width: 100px;
+    padding: 16px 0 16px 0;
+    background-color: rgb(42, 41, 41);
+    color: aliceblue;
+    cursor: pointer;
+    margin: 10px;
+    font: bolder;
+    font-size: x-large;
+}
 .numbers div{
     text-align: center;
     width: 100px;
     padding: 16px 0 16px 0;
     background-color: aliceblue;
+    margin: 10px;
+    font: bolder;
+    font-size: x-large;
+}
+.numbers div:hover{
+    text-align: center;
+    width: 100px;
+    padding: 16px 0 16px 0;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 5px 1px rgba(140, 140, 140, 0.8);
+    cursor: pointer;
     margin: 10px;
     font: bolder;
     font-size: x-large;

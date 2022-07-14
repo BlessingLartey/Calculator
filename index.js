@@ -52,6 +52,19 @@ for (let i = 0; i < operation.length; i++){
 result.addEventListener("click", compute)
 
 function compute () {
-    console.log("Hello")
+    // let currentString = input.innerHTML
+    // for(i=0; i < operation.length -1; i++){
+    //     let firstString = currentString.substring(0, input.innerHTML.indexOf(operation[i]));
+    //     console.log(firstString)
+    // }
+    
+    // let lastChar = operation;
+    // if (lastChar === "+" || lastChar === "-" || lastChar === "/" || lastChar === "x"){
+    //     let newString = e.target.innerHTML
+    //     console.log(newString)
+    // }
+   
+
+    console.log(input.innerHTML)
 }
 
