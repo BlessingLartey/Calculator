@@ -17,11 +17,11 @@ function displayHello(){
 for (let i = 0; i < number.length; i++){
     number[i].addEventListener("click", function(e){
         let currentString = input.innerHTML;
-        let lastChar = currentString[currentString.lenght - 1];
+        let lastChar = currentString[currentString.length - 1];
 
         if(resultDisplayed === false){
             input.innerHTML +=e.target.innerHTML;
-        } else if(resultDisplayed === true && lastChar === "+" || lastChar === "-" || lastChar === "/" || lastChar === "*"){
+        } else if(resultDisplayed === true && lastChar === "+" || lastChar === "-" || lastChar === "/" || lastChar === "x"){
             resultDisplayed = false;
             input.innerHTML += e.target.innerHTML;
         } else{
@@ -33,27 +33,25 @@ for (let i = 0; i < number.length; i++){
 }
 
 
+for (let i = 0; i < operation.length; i++){
+    operation[i].addEventListener("click", function(e) {
+        let currentString = input.innerHTML;
+        let lastChar = currentString[currentString.length - 1];
 
-// clear(){
+        if(lastChar === "+" || lastChar === "-" || lastChar === "x" || lastChar === "/"){
+            let newString = currentString.substring(0, currentString.length - 1) + e.target.innerHTML;
+            input.innerHTML = newString;
+        } else if (currentString.length == 0){
+            alert ("enter a number first");
+        } else {
+            input.innerHTML += e.target.innerHTML;
+        }
+    })
+}
 
-// }
+result.addEventListener("click", compute)
 
-// delete(){
+function compute () {
+    console.log("Hello")
+}
 
-// }
-
-// appendNumber(number){
-
-// }
-
-// chooseOperation(operation){
-
-// }
-
-// compute(){
-
-// }
-
-// updateDisplay(){
-
-// }

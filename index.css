@@ -17,7 +17,7 @@ body{
     border: solid black;
     margin: 10px;
 }
-.operations{
+.operation{
     display: flex;
 }
 .numbers{
@@ -26,7 +26,7 @@ body{
 .down_panel{
     display: flex;
 }
-.operations div{
+.operation div{
     text-align: center;
     width: 100px;
     padding: 16px 0 16px 0;
