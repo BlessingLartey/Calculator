@@ -7,13 +7,6 @@ let result = document.getElementById("result");
 resultDisplayed = false;
 
 
-deleteButton.addEventListener("click", displayHello)
-function displayHello(){
-    console.log ("Hello")
-}
-
-
-
 for (let i = 0; i < number.length; i++){
     number[i].addEventListener("click", function(e){
         let currentString = input.innerHTML;
@@ -60,10 +53,5 @@ clear.onclick = () => {
 }
 
 result.onclick = () => {
-    input.innerHTML = eval(input.innerHTML)
-    
-//     if (input.innerHTML = "undefined"){
-//         input.innerHTML = "no numbers found"
-//         alert("please key in some numbers to compute")
-// } 
-}
+    input.innerHTML = eval(input.innerHTML); 
+} 
