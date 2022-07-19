@@ -34,6 +34,7 @@ body{
     width: 100px;
     padding: 16px 0 16px 0;
     background-color: rgb(153, 153, 153);
+    border-radius: 20px;
     margin: 10px;
     font: bolder;
     font-size: x-large;
@@ -44,6 +45,7 @@ body{
     width: 100px;
     padding: 16px 0 16px 0;
     background-color: rgb(42, 41, 41);
+    border-radius: 20px;
     color: aliceblue;
     cursor: pointer;
     margin: 10px;
@@ -55,6 +57,7 @@ body{
     width: 100px;
     padding: 16px 0 16px 0;
     background-color: aliceblue;
+    border-radius: 20px;
     margin: 10px;
     font: bolder;
     font-size: x-large;
@@ -64,6 +67,7 @@ body{
     width: 100px;
     padding: 16px 0 16px 0;
     background-color: aliceblue;
+    border-radius: 20px;
     box-shadow: 2px 2px 5px 1px rgba(140, 140, 140, 0.8);
     cursor: pointer;
     margin: 10px;
@@ -77,6 +81,7 @@ body{
     font: bolder;
     font-size: x-large;
     background-color: rgb(153, 153, 153);
+    border-radius: 20px;
     margin: 10px;
 }
 .equal{
@@ -84,5 +89,17 @@ body{
     width: 100px;
     padding: 105px 0 105px 0;
     background-color: green;
+    border-radius: 20px;
     margin: 10px;
+}
+
+.numbers .dot, .numbers .clear{
+    text-align: center;
+    width: 100px;
+    padding: 16px 0 16px 0;
+    background-color: rgb(153, 153, 153);
+    border-radius: 20px;
+    margin: 10px;
+    font: bolder;
+    font-size: x-large;
 }

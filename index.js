@@ -21,7 +21,7 @@ for (let i = 0; i < number.length; i++){
 
         if(resultDisplayed === false){
             input.innerHTML +=e.target.innerHTML;
-        } else if(resultDisplayed === true && lastChar === "+" || lastChar === "-" || lastChar === "/" || lastChar === "x"){
+        } else if(resultDisplayed === true && lastChar === "+" || lastChar === "-" || lastChar === "/" || lastChar === "*"){
             resultDisplayed = false;
             input.innerHTML += e.target.innerHTML;
         } else{
@@ -38,7 +38,7 @@ for (let i = 0; i < operation.length; i++){
         let currentString = input.innerHTML;
         let lastChar = currentString[currentString.length - 1];
 
-        if(lastChar === "+" || lastChar === "-" || lastChar === "x" || lastChar === "/"){
+        if(lastChar === "+" || lastChar === "-" || lastChar === "*" || lastChar === "/"){
             let newString = currentString.substring(0, currentString.length - 1) + e.target.innerHTML;
             input.innerHTML = newString;
         } else if (currentString.length == 0){
@@ -49,22 +49,21 @@ for (let i = 0; i < operation.length; i++){
     })
 }
 
-result.addEventListener("click", compute)
 
-function compute () {
-    // let currentString = input.innerHTML
-    // for(i=0; i < operation.length -1; i++){
-    //     let firstString = currentString.substring(0, input.innerHTML.indexOf(operation[i]));
-    //     console.log(firstString)
-    // }
-    
-    // let lastChar = operation;
-    // if (lastChar === "+" || lastChar === "-" || lastChar === "/" || lastChar === "x"){
-    //     let newString = e.target.innerHTML
-    //     console.log(newString)
-    // }
-   
-
-    console.log(input.innerHTML)
+deleteButton.onclick = () => {
+    let string = input.innerHTML.toString();
+    input.innerHTML = string.substring(0, string.length - 1)
 }
 
+clear.onclick = () => {
+    input.innerHTML = ""
+}
+
+result.onclick = () => {
+    input.innerHTML = eval(input.innerHTML)
+    
+    if (input.innerHTML = "undefined"){
+        input.innerHTML = "no numbers found"
+        alert("please key in some numbers to compute")
+} 
+}
