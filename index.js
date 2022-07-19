@@ -62,8 +62,8 @@ clear.onclick = () => {
 result.onclick = () => {
     input.innerHTML = eval(input.innerHTML)
     
-    if (input.innerHTML = "undefined"){
-        input.innerHTML = "no numbers found"
-        alert("please key in some numbers to compute")
-} 
+//     if (input.innerHTML = "undefined"){
+//         input.innerHTML = "no numbers found"
+//         alert("please key in some numbers to compute")
+// } 
 }
