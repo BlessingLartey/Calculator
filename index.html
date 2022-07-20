@@ -6,16 +6,21 @@
         <link rel="stylesheet" href="index.css"/>
         
     </head>
-    <body>
-        <div class="body_container">
+    <body id="body">
+        <div  class="body_container">
             <h1 class="title">Calculator</h1>
-            <div class="container">
+            <div id="container" class="container">
+                <div class="theme">
+                    <div id="theme_dark" class="theme-toggler-dark">dark mode</div>
+                    <div id="theme_light" class="theme-toggler-light">light mode</div>
+                </div>
+                
                 <div class="input" id="input"></div>
                 <div id="operation" class="operation">
                         <div>+</div>
                         <div>-</div>
-                        <div>*</div>
-                        <div>/</div>
+                        <div>&times;</div>
+                        <div>&divide;</div>
                 </div>
                 <div class="down_panel">
                     <div>
@@ -35,7 +40,7 @@
                                 <div>3</div>
                         </div>
                         <div class="numbers">
-                                <div class="dot">.</div>
+                                <div id="dot" class="dot">.</div>
                                 <div>0</div>
                                 <div class="clear" id="clear">c</div>
                         </div>
@@ -47,6 +52,10 @@
                     
                 </div>
             </div>
+        </div>
+        <div>
+            <h1>History</h1>
+            <p>hdhijfdjf;sdikvs</p>
         </div>
 
         <script src="index.js"></script>
