@@ -170,7 +170,6 @@ h1{
     }
     .container{
         width: 100%;
-        padding: 0;
         border: solid;
         border-left: none;
         border-right: none;
