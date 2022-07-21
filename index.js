@@ -62,9 +62,14 @@ result.onclick = () => {
     firstData = input.innerHTML;
     input.innerHTML = eval(input.innerHTML); 
     data = firstData + " = " + eval(input.innerHTML)
+    var history = []
     function calculation(){
+        history.push(data)
         para = document.getElementById("p");
-        para.innerHTML += data;
+        for (i = 0; i < history.length; i++){
+            para.innerHTML += history[i];
+        }
+       
     }
     calculation()
 

@@ -1,5 +1,6 @@
 *{
-
+padding: 0;
+margin: 0;
     outline: none;
 }
 body{
@@ -15,7 +16,6 @@ p{
     background-color: white;
     padding: 20px;
     border: solid;
-    width: 400px;
 }
 .input{
     width: 370px;
@@ -160,6 +160,10 @@ p{
 }
 h1{
     font-size: xx-large;
+}
+.history{
+    margin: 0 40px 0 40px;
+    text-align: center;
 }
 
 
