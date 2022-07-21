@@ -32,11 +32,11 @@ for (let i = 0; i < number.length; i++){
 }
 
 
+
 for (let i = 0; i < operation.length; i++){
     operation[i].addEventListener("click", function(e) {
         let currentString = input.innerHTML;
         let lastChar = currentString[currentString.length - 1];
-
         if(lastChar === "+" || lastChar === "-" || lastChar === "*" || lastChar === "/"){
             let newString = currentString.substring(0, currentString.length - 1) + e.target.innerHTML;
             input.innerHTML = newString;
