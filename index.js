@@ -9,6 +9,7 @@ let result = document.getElementById("result");
 let themeDark = document.getElementById("theme_dark")
 let themeLight = document.getElementById("theme_light")
 let dot = document.getElementById("dot")
+let history = document.getElementById("history")
 resultDisplayed = false;
 
 
@@ -58,7 +59,15 @@ clear.onclick = () => {
 }
 
 result.onclick = () => {
+    firstData = input.innerHTML;
     input.innerHTML = eval(input.innerHTML); 
+    data = firstData + " = " + eval(input.innerHTML)
+    function calculation(){
+        para = document.getElementById("p");
+        para.innerHTML += data;
+    }
+    calculation()
+
 } 
 
 themeDark.onclick = () => {
@@ -96,3 +105,5 @@ themeLight.onclick = () =>{
     deleteButton.style.backgroundColor=null;
     result.style.backgroundColor = null;
 }
+
+
