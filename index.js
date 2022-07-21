@@ -62,16 +62,17 @@ result.onclick = () => {
     firstData = input.innerHTML;
     input.innerHTML = eval(input.innerHTML); 
     data = firstData + " = " + eval(input.innerHTML)
-    var history = []
-    function calculation(){
-        history.push(data)
-        para = document.getElementById("p");
+    var history = [data]
+    function updateHistory(){
+        const historyContainer = document.getElementById("history-container")
         for (i = 0; i < history.length; i++){
-            para.innerHTML += history[i];
-        }
-       
+            const historyElement = document.createElement("p")
+            historyElement.innerHTML += history[i];
+            console.log(historyElement)
+            historyContainer.appendChild(historyElement)
+        }   
     }
-    calculation()
+    updateHistory()
 
 } 
 
