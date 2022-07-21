@@ -13,6 +13,7 @@ p{
 .container{
     background-color: white;
     border: solid;
+    margin-top: 10px;
 }
 .input{
     width: 370px;
@@ -157,6 +158,7 @@ p{
 }
 h1{
     font-size: xx-large;
+    margin-top: 10px;
 }
 .history{
     margin: 0 40px 0 40px;
@@ -177,12 +179,6 @@ h1{
         border: solid;
         border-left: none;
         border-right: none;
-        margin-left: 10px;
-        margin-right: 10px;
-        padding-bottom: 40px;
-        margin-bottom: 20px;
-        padding-left: 10px;
-        padding-top: 10px;
     }
 
     .theme{
