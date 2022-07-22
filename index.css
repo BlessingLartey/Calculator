@@ -9,11 +9,13 @@ body{
 }
 p{
     font-size: xx-large;
+    margin: 10px 0 10px 0;
 }
 .container{
     background-color: white;
     border: solid;
     margin-top: 10px;
+    padding: 20px;
 }
 .input{
     width: 370px;
@@ -164,9 +166,18 @@ h1{
     font-size: xx-large;
     margin-top: 10px;
 }
+h6{
+    color: rgb(100, 100, 100);
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+
+}
 .history{
     margin: 0 40px 0 40px;
     text-align: center;
+    height: 500px;
+    
 }
 
 
@@ -192,4 +203,11 @@ h1{
         padding: 10px 20px 0 10px;
 
     }
+    .history{
+        margin: 0 40px 0 40px;
+        text-align: center;
+        height: auto;
+        
+    }
+    
 }
