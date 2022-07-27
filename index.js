@@ -90,7 +90,7 @@ themeDark.onclick = () => {
     }
 
     deleteButton.style.backgroundColor="#210D26"
-    result.style.backgroundColor = "#400740"
+    result.style.backgroundColor = "#210D26"
     clear.style.backgroundColor = "#210D26"
     dot.style.backgroundColor = "#210D26"
 
